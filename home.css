@@ -777,7 +777,7 @@ grid-template-areas:
 .....................................*/
 
 .contenedor .convenio_marco{
-    display: grid;
+    
     background: transparent;
     grid-column-start: 1;
     grid-column-end: -1;
@@ -798,64 +798,208 @@ grid-template-areas:
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr auto;
 }
-.convenio_marco .marco_v{
+.solucion h1{
+    font-size: 60px;
+    color: #206395;
+    white-space: nowrap;
+    font-family: Verdana;
+}
 
+.marco_v{
+    justify-items: center;
     display: grid;
     grid-column-start: 1;
     grid-column-end: -1; 
 
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr auto;
+    grid-template-columns: 50%  50%;
+    grid-template-rows: 1fr;
 
     grid-template-areas: 
-                "c_marco1  c_marco2  c_marco2"
-                "c_marco3  c_marco3  c_marco3";
+                "c_marco  img_c_marco"
+                "c_marco  img_c_marco";
 } 
 
+
 .img_c_marco{
+    position: relative;
+    left: 10px;
+    top: 10px;
     grid-area: img_c_marco;
 }
 .c_marco1{
+    position: relative;
+    left: 15px;
+    top: 20px;
     grid-area: c_marco1;
 }
 .c_marco2{
     grid-area: c_marco2;
 }
 .c_marco3{
+   
+    display: grid;
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    
     grid-area: c_marco3;
 }
 .c_marco{
+    display: inline-block;
+    justify-items: center;
     display: grid;
     margin: 10px;
     padding: 30px;
     grid-column: 1 / 2 ;
     grid-row: 1 / 3 ;
     grid-area: c_marco;
+
+    grid-template-areas: 
+              "c_marco1 c_marco2"
+              "C_marco3 c_marco3";
 }
-.c_marco h1{
+.c_marco2 h1{
     color: #206395;
-    font-size: 50px;
-    text-align: center;
+    font-size: 80px;
+    position: relative;
+    right: 50px; 
+    
+}
+
+.c_marco3 p{
+    width: 600px;
+    color:#448bdf;
+    position: relative;
+    right: 130px; 
+    font-size: 26px;
+    justify-content: left;
+   
 }
 .solucion  .h1{
     font-size: 45px;
     color: #206395;
 
 }
+/*...FIN DE MARCO...*/
+
+
 .contenedor .pricing{
-    margin: 30px;
-    padding: 20px;
+    width: auto;
+    height: auto;
     display: grid;
-    display: inline-block;
+    justify-items: center;
+
     grid-column-start: 1;
     grid-column-end: -1;
-    grid-template-columns: 3, 1fr;
-    grid-template-rows: 1, auto;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr auto;
 
 }
+.pricing .p_card{
+    display: inline-block;
+    justify-items: center;
+    align-items: center;
+    width: 1300px;
+    background:white;
+    height: auto;
 
+    display: grid;
     
+    
+    box-shadow: 0 5px 15px blue;
+    border-radius: 15px;
+    grid-column-start: 1;
+    grid-column-end: -1; 
 
+    grid-template-columns: 50%  50%;
+    grid-template-rows: 1fr;
+
+}
+.img_c_pricing img{
+    margin: 20px;
+    padding: 20px;
+    
+}
+
+.c_pricing{
+    font-size: 20px;
+    margin: 20px;
+    padding: 20px;
+}
+.c_pricing h1{
+    font-size: 21px;
+    color: #206395;
+
+}
+.c_pricing ul{
+    list-style-image: url(Rectangle\ 79_Propuesta\ de\ Valor_p1.png);
+}
+    
+/*----------PAGINA CONVENIO MARCO CONTACTO 2-------
+---------------------------------------------------
+----------------------------------------------------*/
+
+.contenedor .vender_mas{
+
+    background-image: url(Rectangulo_Conversemos_p2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    width: auto;
+    height: 292px;
+    display: grid;
+    justify-items: center;
+
+    grid-column-start: 1;
+    grid-column-end: -1;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+}
+
+.masymejor{
+    white-space: nowrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+
+}
+.masymejor h1{
+    position: relative;
+    top: 130px;
+    color: #206395;
+    font-size: 55px;
+}
+.masymejor h3{
+    position: relative;
+    top: 100px;
+    left: 300px;
+    color: #448bdf;
+    font-size: 35px;
+}
+
+.iva_pymes1 button{
+
+    width: 250px;
+    height:  71px;
+    font-size: 25px;
+    position: relative;
+    top: 130px;
+    background: #f15654;
+    font-size: 23px;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    display: grid;
+    text-justify: auto;
+    align-items: center;
+    border-bottom-width: 60%;
+}
+.iva_pymes1 button:hover{
+    background: #e78a89;
+    color: white;
+}
 
 
 
