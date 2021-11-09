@@ -772,6 +772,8 @@ grid-template-areas:
     .contenedor .empresas {
         grid-template-areas: "img1 img2 img3 img4 img4";
     }*/
+
+
 /*...INICIO DE SEGUNDA PÁGINA........
 .....................................
 .....................................*/
@@ -881,7 +883,7 @@ grid-template-areas:
 }
 /*...FIN DE MARCO...*/
 
-
+/*...INICIO PRICING...*/
 .contenedor .pricing{
     width: auto;
     height: auto;
@@ -934,8 +936,9 @@ grid-template-areas:
 .c_pricing ul{
     list-style-image: url(Rectangle\ 79_Propuesta\ de\ Valor_p1.png);
 }
+/*... FIN PRICING...*/
     
-/*----------PAGINA CONVENIO MARCO CONTACTO 2-------
+/*----------PÁGINA CONVENIO MARCO CONTACTO 2-------
 ---------------------------------------------------
 ----------------------------------------------------*/
 
@@ -999,6 +1002,19 @@ grid-template-areas:
 .iva_pymes1 button:hover{
     background: #e78a89;
     color: white;
+}
+
+/*----------PÁGINA COMPRA ÁGIL--------------------
+---------------------------------------------------
+----------------------------------------------------*/
+.contenedor .compra_agil{
+    
+    background: transparent;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-template-columns: 4, 1fr;
+    grid-template-rows: 1, auto;
+
 }
 
 
